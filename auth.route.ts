@@ -1,8 +1,8 @@
 // auth.route.ts
 
-import express from 'express';
-import ensureAdmin from '../middleware/ensureAdmin';
-import ensureRole from '../middleware/ensureRole';
+require express from 'express';
+require ensureAdmin from '../middleware/ensureAdmin';
+require ensureRole from '../middleware/ensureRole';
 
 const router = express.Router();
 
