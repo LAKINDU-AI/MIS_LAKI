@@ -1,6 +1,6 @@
 // ensureRole.ts
 
-require { Request, Response, NextFunction } from 'express';
+import { Request, Response, NextFunction } from 'express';
 
 const ensureRole = (role: string) => {
     return (req: Request, res: Response, next: NextFunction) => {

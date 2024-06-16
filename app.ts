@@ -1,8 +1,8 @@
-require express, { Request, Response, NextFunction } from 'express';
-require { PrismaClient } from '@prisma/client';
-require bodyParser from 'body-parser';
-require session from 'express-session';
-require path from 'path';
+import express, { Request, Response, NextFunction } from 'express';
+import { PrismaClient } from '@prisma/client';
+import bodyParser from 'body-parser';
+import session from 'express-session';
+import path from 'path';
 
 const prisma = new PrismaClient();
 const app = express();
