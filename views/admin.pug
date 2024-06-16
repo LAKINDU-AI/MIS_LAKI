@@ -1,0 +1,37 @@
+extends layouts/layout
+
+block content
+  h1 Admin Dashboard
+  p Welcome, Admin!
+
+  // Add role dummy role control table here
+  table
+    thead
+      tr
+        th Role
+        th Controls
+    tbody
+      tr
+        td Admin
+        td
+          a(href='#') Edit
+          | 
+          a(href='#') Delete
+      tr
+        td HQ Manager
+        td
+          a(href='#') Edit
+          | 
+          a(href='#') Delete
+      tr
+        td Manager
+        td
+          a(href='#') Edit
+          | 
+          a(href='#') Delete
+      tr
+        td Waiter
+        td
+          a(href='#') Edit
+          | 
+          a(href='#') Delete

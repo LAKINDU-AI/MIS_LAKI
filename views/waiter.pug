@@ -1,0 +1,23 @@
+extends layouts/layout
+
+block content
+  h1 Waiter Dashboard
+  p Welcome, Waiter!
+  p Manage orders and payments here.
+
+// views/waiter.pug
+
+extends layouts/layout
+
+block content
+  h1 Waiter Dashboard
+  p Welcome, Waiter!
+  table
+    caption>Menu Items
+    tr
+      th Item
+      th Price
+    each menuItem in menuItems
+      tr
+        td= menuItem.item
+        td= menuItem.price
